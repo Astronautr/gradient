@@ -54,6 +54,16 @@ public class Gradient {
         return result;
     }
 
+    public static Gradient nums(double lower,double upper) {
+        Gradient result = new Gradient();
+        result.dX = new SetInterval[dim];
+        for (int i = 0; i < dim; i++) {
+            result.dX[i] = ic.numsToInterval(0,0);
+        }
+        result.X = ic.numsToInterval(lower,upper);
+        return result;
+    }
+
     public Gradient neg() {
         Gradient result = new Gradient();
         result.dX = new SetInterval[dim];
@@ -87,6 +97,16 @@ public class Gradient {
         result.X = ic.intersection(this.X, Y);
         result.dX = new SetInterval[dim];
         result.dX = this.dX.clone();
+        return result;
+    }
+
+    public Gradient hull(Gradient Y) {
+        Gradient result = new Gradient();
+        result.X = ic.numsToInterval(Math.min(this.X.doubleInf(),Y.X.doubleInf()),(Math.max(this.X.doubleSup(),Y.X.doubleSup())));
+        result.dX = new SetInterval[dim];
+        for (int i = 0; i < dim; i++) {
+            result.dX[i] = ic.numsToInterval(Math.min(this.dX[i].doubleInf(),Y.dX[i].doubleInf()),(Math.max(this.dX[i].doubleSup(),Y.dX[i].doubleSup())));
+        }
         return result;
     }
 
