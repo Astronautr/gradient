@@ -36,10 +36,13 @@ public class Gradient {
             result[i] = new Gradient();
             result[i].dX = new SetInterval[dim];
             result[i].X = box[i];
-            for (int j = 0; j < dim; j++) {//At this place instead of (dim + 1) assignments may be (dim) comparisons and (dim) assignments.
+            for (int j = 0; j < i; j++) {
                 result[i].dX[j] = ic.numsToInterval(0,0);
             }
             result[i].dX[i] = ic.numsToInterval(1,1);
+            for (int j = i + 1; j < dim; j++) {
+                result[i].dX[j] = ic.numsToInterval(0,0);
+            }
         }
         return result;
     }
