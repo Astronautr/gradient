@@ -13,7 +13,7 @@ public class Gradient {
     private static SetIntervalContext ic; //This field determine accuracy of computing.
     private static int dim; //Represents the number of variables.
     private SetInterval X; //Interval value of expression.
-    private SetInterval dX[]; //Interval values of derivative.
+    private SetInterval[] dX; //Interval values of derivative.
 
     public Gradient() {
         X = null;
