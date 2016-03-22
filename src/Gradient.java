@@ -3,6 +3,7 @@ import java.util.Arrays;
 import net.java.jinterval.interval.set.SetInterval;
 import net.java.jinterval.interval.set.SetIntervalContext;
 import net.java.jinterval.interval.set.SetIntervalContexts;
+import net.java.jinterval.interval.set.SetIntervalOps;
 import net.java.jinterval.rational.ExtendedRational;
 import net.java.jinterval.rational.Rational;
 
@@ -18,8 +19,8 @@ public class Gradient {
     private SetInterval X; //Interval value of expression.
     private final SetInterval dX[]; //Interval values of derivative.
 
-    private static final SetInterval ZERO = SetIntervalContexts.getExact().numsToInterval(0, 0);
-    private static final SetInterval ONE = SetIntervalContexts.getExact().numsToInterval(1, 1);
+    private static final SetInterval ZERO = SetIntervalOps.nums2(0, 0);
+    private static final SetInterval ONE = SetIntervalOps.nums2(1, 1);
 
     /**
      * Owner of Gradients related to specific problem
