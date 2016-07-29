@@ -7,4 +7,4 @@ At this moment example of using Gradient with JInterval placed in Main class of 
 
 Source of JInterval Java library: https://java.net/projects/jinterval/
 
-Introduction in JInterval: http://goo.gl/3YxOuy
+Introduction to JInterval in "Reliable Computing Journal": http://goo.gl/3YxOuy
