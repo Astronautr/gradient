@@ -3,7 +3,7 @@ Gradient class for interval computing on Java. With this class you can compute p
 
 At this moment example of using Gradient with JInterval placed in Main class of current version: https://github.com/Astronautr/gradient/blob/master/src/Main.java
 
-Links:
+#Links
 
 Source of JInterval Java library: https://java.net/projects/jinterval/
 
