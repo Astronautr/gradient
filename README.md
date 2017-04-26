@@ -1,7 +1,5 @@
 # gradient
-Gradient class for interval computing on Java. With this class you can compute partial derivatives and the range of values for some functions. Here was used the idea of automatic differentiation. JInterval library was used for all interval arithmetic and functions.
-
-At this moment example of using Gradient with JInterval placed in Main class of current version: https://github.com/Astronautr/gradient/blob/master/src/Main.java
+main.java.ru.nsc.interval.gradient.Gradient class for interval computing on Java. With this class you can compute partial derivatives and the range of values for some functions. Here was used the idea of automatic differentiation. JInterval library was used for all interval arithmetic and functions.
 
 # Links
 

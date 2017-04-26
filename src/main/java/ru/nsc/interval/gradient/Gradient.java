@@ -1,3 +1,5 @@
+package ru.nsc.interval.gradient;
+
 import net.java.jinterval.interval.set.SetInterval;
 import net.java.jinterval.interval.set.SetIntervalContext;
 import net.java.jinterval.rational.*;
@@ -5,7 +7,7 @@ import net.java.jinterval.rational.*;
 
 public class Gradient {
 /**
- *   Gradient class for interval computing on Java.
+ *   main.java.ru.nsc.interval.gradient.Gradient class for interval computing on Java.
  *   With this class you can compute partial derivatives and the range of values for some functions.
  *   Here was used the idea of automatic differentiation.
  *   JInterval library was used for all interval arithmetic and functions.
