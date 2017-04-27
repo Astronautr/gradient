@@ -8,11 +8,18 @@
   <name>gradient</name>
   <url>http://maven.apache.org</url>
 
+  <repositories>
+    <repository>
+      <id>jitpack.io</id>
+      <url>https://jitpack.io</url>
+    </repository>
+  </repositories>
+
   <dependencies>
     <dependency>
-      <groupId>net.java.jinterval</groupId>
-      <artifactId>jinterval-interval-java</artifactId>
-      <version>0.1-SNAPSHOT</version>
+      <groupId>com.github.jinterval</groupId>
+      <artifactId>jinterval</artifactId>
+      <version>fix-jitpack-integration-SNAPSHOT</version>
     </dependency>
   </dependencies>
 </project>
